@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Buy</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#ffe468" stroke-miterlimit="10" stroke-width="2" d="M28 26H16M2 10h10l10 40h32l8-24H48"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+  <circle data-name="layer2" cx="24" cy="58" r="4" fill="none" stroke="#ffe468"
+  stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></circle>
+  <circle data-name="layer2" cx="50" cy="58" r="4" fill="none"
+  stroke="#ffe468" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></circle>
+  <path data-name="layer1" fill="none" stroke="#ffe468" stroke-miterlimit="10"
+  stroke-width="2" d="M38 2v23M28 15l10 10 10-10" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+</svg>

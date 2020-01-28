@@ -1,0 +1,465 @@
+body,
+input,
+select,
+textarea {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Gotham Narrow', sans-serif;
+    color: #282828;
+    line-height: 1.4;
+    /* background: #0B2237; */
+    background: #1c1c28;
+    margin: 0;
+    transition: all 200ms linear 250ms;
+    background-size: 100% 100%;
+}
+
+#bg-glow {
+    position: fixed;
+    left: -20vw;
+    top: -9vh;
+    width: 100vw;
+    height: 100vh;
+    /* background: radial-gradient(closest-side, #12395B, #0B2237); */
+    background: radial-gradient(closest-side, #28293d, #1c1c28);
+    border-radius: 100%;
+    opacity: .5;
+    z-index: -1;
+}
+
+/*--------------------
+ Typography
+--------------------*/
+
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url(fonts/GothamNarrow-Book.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham Narrow';
+    src: url(fonts/GothamNarrow-Medium.woff) format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(fonts/Gotham-Book.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(fonts/Gotham-Medium.woff) format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Mercury';
+    src: url(fonts/MercuryDisplay-Roman.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Mercury';
+    src: url(fonts/MercuryDisplay-Semibold.woff) format('woff');
+    font-weight: 500;
+}
+
+.step { 
+    width: 100vw;
+    height: 100vh;
+}
+
+.light-text {
+    color: #fff;
+}
+
+.large-list {
+    line-height: 1.2;
+    font-size: 2rem;
+    list-style: none;
+    margin-left: 0;
+    padding: 0
+}
+
+.large-list li {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.large-list li:before {
+    content: '';
+    background: url(../img/bullet-white.svg) center/100% no-repeat;
+    opacity: .3;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+#fixed-logo {
+    position: fixed;
+    top: 24px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.left-rail {
+    /* background: #0E2E49; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    min-width: 148px;
+    height: 100%;
+    opacity: 0;
+    transition: all 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.left-rail .stripe {
+    background: url(../img/drip-icon.svg) no-repeat;
+    position: absolute;
+    top: 34%;
+    right: 60px;
+    width: 28px;
+    height: 26px;
+    margin-top: 44px;
+}
+
+.left-rail .stripe:before,
+.left-rail .stripe:after {
+    content: '';
+    position: absolute;
+    height: 99999px;
+    margin-left: 7px;
+    border-left: 1px solid #3a3b52;
+    border-right: 1px solid #3a3b52;
+    transition: all 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.left-rail .stripe:before {
+    bottom: 100%;
+    margin-bottom: 7px;
+}
+
+.left-rail .stripe:after {
+    top: 100%;
+    margin-top: 9px;
+}
+
+.right-rail-content {
+    max-width: 48rem;
+}
+
+.right-rail-content > * {
+    position: absolute;
+    left: 20%;
+    margin-left: 60px;
+}
+
+.page-header h1,
+.header-title {
+    margin-top: 0;
+    color: #ffe468;
+    margin-bottom: 0.8em;
+    font-size: 1.125rem;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1,
+.page-header h2,
+.header-headline {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.88651rem;
+    font-weight: 500;
+    font-family: "Gotham Narrow", Arial, sans-serif;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.page-header p,
+.header-text {
+    margin-top: 0;
+    margin-bottom: -.35em;
+    font-size: 1.42383rem;
+}
+
+.authors {
+    margin-top: 6rem;
+    display: flex;
+    bottom: 40px;
+    margin-left: 0;
+}
+
+.authors > div {
+    margin: 20px 0 20px 60px;
+}
+
+.authors h3,
+.authors p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.authors h3 {
+    font-weight: 600;
+}
+
+#particles {
+    opacity: 0;
+    transition: all 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* .impress-on-intro,
+.impress-on-agenda,
+.impress-on-buzzwords,
+.impress-on-buzzwords-freeze {
+    background-color: #0B2237;
+    background-size: 100% 100%;
+} */
+
+.impress-on-intro #particles,
+.impress-on-agenda #particles {
+    opacity: 1;
+}
+
+.impress-on-intro .left-rail,
+.impress-on-agenda .left-rail {
+    opacity: 1;
+}
+
+#intro {
+    width: 100vw;
+    min-width: 960px;
+    height: 100vh;
+    min-height: 500px;
+}
+
+#intro .right-rail-content {
+    opacity: 0;
+    transition: all 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.impress-on-intro #intro .right-rail-content  {
+    opacity: 1;
+}
+
+#intro .logo {
+    top: 60px;
+    max-width: 40px;
+    /* opacity: .1; */
+}
+
+#intro .page-header {
+    top: 34%;
+}
+
+#intro .left-rail .stripe {
+    transition: all 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.impress-on-agenda #intro .left-rail .stripe {
+    top: 0;
+    margin-top: 2070px;
+}
+
+#agenda {
+    width: 100vw;
+    min-width: 960px;
+    height: 100vh;
+    min-height: 500px;
+}
+
+#agenda h1 {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+#agenda .right-rail-content {
+    opacity: 0;
+    transition: all 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.impress-on-agenda #agenda .right-rail-content  {
+    opacity: 1;
+}
+
+.buzzword {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    padding: 16px 40px;
+    margin: 0 0 8px 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: border 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.buzzword:last-child {
+    margin-bottom: 0;
+}
+
+#buzzwords-freeze {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#buzzwords-canvas {
+    display: block;
+}
+
+#buzzwords-freeze.done .buzzword {
+    opacity: 1;
+    border-color: #3a3b52;
+}
+
+.buzzword-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1000ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.buzzword-icon-mask {
+    width: 80px;
+    height: 40px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.buzzword-icon {
+    position: absolute;
+    width: 40px;
+    left: 100%;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#buzzwords-freeze.done .buzzword-icon {
+    left: 0;
+}
+
+#buzzwords-freeze.done.past .buzzword-list {
+    top: 0;
+    left: 0;
+    transform: scale(.66) translate(calc(-34% * .66), calc(-34% * .66));
+}
+
+#buzzwords-freeze.done.past .buzzword {
+    opacity: .2;
+    transition: border 500ms cubic-bezier(0.645, 0.045, 0.355, 1), opacity 400ms;
+}
+
+#capabilities .large-list {
+    height: 100%;
+    opacity: 0;
+    transition: all 100ms cubic-bezier(0.645, 0.045, 0.355, 1), opacity 400ms, margin-left 0ms;
+    overflow: hidden;
+}
+
+#capabilities.reveal .large-list {
+    opacity: 1;
+}
+
+#capabilities .large-list li {
+    margin-top: 100vh;
+    align-items: flex-start;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1), opacity 400ms;
+}
+
+#capabilities .large-list li .item-content {
+    height: 38px;
+    overflow: hidden;
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1), opacity 400ms;
+}
+
+#capabilities .large-list li:before {
+    margin-top: 4px;
+}
+
+
+#capabilities .large-list h2 {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+#capabilities.reveal .large-list li {
+    margin-top: 0;
+}
+
+.impress-on-prediction-reveal #capabilities .large-list #c-prediction .item-content,
+.impress-on-personalization-reveal #capabilities .large-list #c-personalization .item-content,
+.impress-on-optimization-reveal #capabilities .large-list #c-optimization .item-content,
+.impress-on-modernization-reveal #capabilities .large-list #c-modernization .item-content,
+.impress-on-democratization-reveal #capabilities .large-list #c-democratization .item-content,
+.impress-on-automation-reveal #capabilities .large-list #c-automation .item-content {
+    height: 100vh;
+}
+
+.impress-on-prediction-reveal #buzzwords-freeze.done.past #b-ai,
+.impress-on-prediction-reveal #buzzwords-freeze.done.past #b-ml,
+.impress-on-prediction-reveal #buzzwords-freeze.done.past #b-real-time,
+
+.impress-on-personalization-reveal #buzzwords-freeze.done.past #b-nlp,
+.impress-on-personalization-reveal #buzzwords-freeze.done.past #b-graph,
+.impress-on-personalization-reveal #buzzwords-freeze.done.past #b-real-time,
+.impress-on-personalization-reveal #buzzwords-freeze.done.past #b-geospatial,
+
+.impress-on-optimization-reveal #buzzwords-freeze.done.past #b-ai,
+.impress-on-optimization-reveal #buzzwords-freeze.done.past #b-ml,
+.impress-on-optimization-reveal #buzzwords-freeze.done.past #b-real-time,
+.impress-on-optimization-reveal #buzzwords-freeze.done.past #b-geospatial,
+.impress-on-optimization-reveal #buzzwords-freeze.done.past #b-trees,
+
+.impress-on-modernization-reveal #buzzwords-freeze.done.past #b-nlp,
+
+.impress-on-democratization-reveal #buzzwords-freeze.done.past #b-ai,
+.impress-on-democratization-reveal #buzzwords-freeze.done.past #b-ml,
+.impress-on-democratization-reveal #buzzwords-freeze.done.past #b-graph,
+
+.impress-on-automation-reveal #buzzwords-freeze.done.past #b-ai,
+.impress-on-automation-reveal #buzzwords-freeze.done.past #b-ml,
+.impress-on-automation-reveal #buzzwords-freeze.done.past #b-computer-vision,
+
+#buzzwords-freeze.done.past .buzzword.active {
+    opacity: 1;
+    background: rgba(0,0,0,.1);
+    border: 1px solid #8abeff;
+    box-shadow: 0 0 5px 0 rgba(158,171,186,.5);
+}
+
+h3.example {
+    display: flex;
+    align-items: center;
+}
+
+
+.example-icon {
+    width: 80px;
+    margin-right: 40px;
+}

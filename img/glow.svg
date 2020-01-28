@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1385px" height="1385px" viewBox="0 0 1385 1385" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="51.5732347%" cy="50%" fx="51.5732347%" fy="50%" r="43.8668893%" id="radialGradient-1">
+            <stop stop-color="#12395B" offset="0%"></stop>
+            <stop stop-color="#0B2237" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-13.2%" y="-13.2%" width="126.4%" height="126.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.856840588">
+        <circle id="Oval" fill="url(#radialGradient-1)" filter="url(#filter-2)" cx="692.5" cy="692.5" r="568.5"></circle>
+    </g>
+</svg>

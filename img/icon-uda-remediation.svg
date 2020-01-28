@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Warning Window</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <circle data-name="layer2"
+  cx="8" cy="12" r="1" fill="none" stroke="#ffe468" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2"></circle>
+  <circle data-name="layer2" cx="15" cy="12" r="1" fill="none"
+  stroke="#ffe468" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+  <circle data-name="layer2" cx="22" cy="12" r="1" fill="none"
+  stroke="#ffe468" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+  <path data-name="layer2" fill="none" stroke="#ffe468" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2" d="M2 6h52v12H2zm52 37V18M2 18v32h32"></path>
+  <path data-name="layer1" fill="none" stroke="#ffe468" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2" d="M30 58l16-30 16 30H30zm16-18v6"></path>
+  <circle data-name="layer1" cx="46" cy="52" r="1" fill="none" stroke="#ffe468"
+  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+</svg>

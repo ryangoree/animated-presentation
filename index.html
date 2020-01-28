@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ML Buzzwords</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/hint.css">
+</head>
+
+<body class="impress-not-supported">
+
+<div id="bg-glow"></div>
+
+<div id="hint">
+	<div class="hint-content">
+        <h1>Use the space bar or arrow keys to navigate.</h1>
+        <a id="close-hint" href="javascript:;">Got it</a>
+    </div>
+</div>
+
+<div id="particles"></div>
+
+<div id="impress">
+
+    <!-- intro -->
+    <div id="intro" class="step light-text" data-x="0" data-y="0">
+        <div class="left-rail">
+            <div class="stripe"></div>
+        </div>
+        <div class="right-rail-content">
+            <img class="logo" src="img/melt-logo-white.svg" />
+            <div class="page-header">
+                <h1>Machine Learning</h1>
+                <h2>Common Buzzwords &amp; How We Use Them</h2>
+            </div>
+            <div class="authors">
+                <div>
+                    <h3>Teri Dactyl</h3>
+                    <p>Director, Paleontology</p>
+                </div>
+                <div>
+                    <h3>Stan Dupp</h3>
+                    <p>Director, Stand Up Strategy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- agenda -->
+    <div id="agenda" class="step light-text" data-x="0" data-y="2000">
+            <div class="left-rail">
+            </div>
+            <div class="right-rail-content">
+                <header>
+                    <h1>Outline</h1>
+                    <ul class="large-list">
+                        <li>Buzzwords</li>
+                        <li>What they really mean</li>
+                        <li>What we're doing now</li>
+                    </ul>
+                </header>
+            </div>
+    </div>
+
+
+    <!-- buzzwords-intro -->
+    <div id="buzzwords" class="step light-text" data-x="0" data-y="4000">
+        <canvas id="buzzwords-canvas"></canvas>
+    </div>
+
+    <!-- buzzwords-freeze -->
+    <div id="buzzwords-freeze" class="step light-text" data-x="0" data-y="4000">
+        <div class="buzzword-list">
+            <h2 class="buzzword" id="b-ai">
+                <div class="buzzword-icon-mask">
+                    <img class="buzzword-icon" src="img/icon-ml.svg" />
+                </div>
+                Machine Learning
+            </h2>
+            <h2 class="buzzword" id="b-ml">
+                <div class="buzzword-icon-mask">
+                    <img class="buzzword-icon" src="img/icon-ml.svg" />
+                </div>
+                Artificial Intelligence
+            </h2>
+            <h2 class="buzzword" id="b-nlp">
+                <div class="buzzword-icon-mask">
+                    <img class="buzzword-icon" src="img/icon-nlp.svg" />
+                </div>
+                Natural Language Processing
+            </h2>
+            <h2 class="buzzword" id="b-graph">
+                <div class="buzzword-icon-mask">
+                    <img class="buzzword-icon" src="img/icon-graph.svg" />
+                </div>
+                Graph
+            </h2>
+            <h2 class="buzzword" id="b-computer-vision">
+                <div class="buzzword-icon-mask">
+                    <img class="buzzword-icon" src="img/icon-computer-vision.svg" />
+                </div>
+                Computer Vision
+            </h2>
+            <h2 class="buzzword" id="b-real-time">
+                <div class="buzzword-icon-mask">
+                    <img class="buzzword-icon" src="img/icon-real-time.svg" />
+                </div>
+                Real Time
+            </h2>
+            <h2 class="buzzword" id="b-geospatial">
+                <div class="buzzword-icon-mask">
+                    <img class="buzzword-icon" src="img/icon-geospatial.svg" />
+                </div>
+                Geospatial
+            </h2>
+            <h2 class="buzzword" id="b-trees">
+                <div class="buzzword-icon-mask">
+                    <img class="buzzword-icon" src="img/icon-decision-tree.svg" />
+                </div>
+                Decision Trees
+            </h2>
+        </div>
+    </div>
+
+    <div id="capabilities" class="step light-text" data-x="0" data-y="4000">
+        <ul class="large-list capabilities-list">
+            <li id="c-prediction">
+                <div class="item-content">
+                    <h2>Prediction</h2>
+                    <div class="example-container">
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-acquisition-and-retention.svg">
+                            A Cool Thing
+                        </h3>
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-digital-big-data.svg">
+                            Another Cool Thing
+                        </h3>
+                    </div>
+                </div>
+            </li>
+            <li id="c-personalization">
+                <div class="item-content">
+                    <h2>Personalization</h2>
+                    <div class="example-container">
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-member-network-graph.svg">
+                            More Cool Things
+                        </h3>
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-digital-assistant.svg">
+                            Awesome Thing
+                        </h3>
+                    </div>
+                </div>
+            </li>
+            <li id="c-optimization">
+                <div class="item-content">
+                    <h2>Optimization</h2>
+                    <div class="example-container">
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-app-fulfillment-flows.svg">
+                            Amazing Thing
+                        </h3>
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-call-optimization.svg">
+                            Fantastic Thing
+                        </h3>
+                    </div>
+                </div>
+            </li>
+            <li id="c-modernization">
+                <div class="item-content">
+                    <h2>Modernization</h2>
+                    <div class="example-container">
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-vom.svg">
+                            Wonderful Thing
+                        </h3>
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-uda-remediation.svg">
+                            Great Thing
+                        </h3>
+                    </div>
+                </div>
+            </li>
+            <li id="c-democratization">
+                <div class="item-content">
+                    <h2>Democratization</h2>
+                    <div class="example-container">
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-untapped-data-assets.svg">
+                            Incredible Thing
+                        </h3>
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-analytics-accumen-enablement.svg">
+                            Bad  Ass Thing
+                        </h3>
+                    </div>
+                </div>
+            </li>
+            <li id="c-automation">
+                <div class="item-content">
+                    <h2>Automation</h2>
+                    <div class="example-container">
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-beneficiary-validation.svg">
+                            Way Cooler Thing
+                        </h3>
+                        <h3 class="example">
+                            <img class="example-icon" src="img/icon-disclosure-detection.svg">
+                            The Most Cool Thing
+                        </h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="prediction-reveal" class="step light-text" data-x="0" data-y="4000" data-reveal="c-prediction"></div>
+    <div id="personalization-reveal" class="step light-text" data-x="0" data-y="4000" data-reveal="c-personalization"></div>
+    <div id="optimization-reveal" class="step light-text" data-x="0" data-y="4000" data-reveal="c-optimization"></div>
+    <div id="modernization-reveal" class="step light-text" data-x="0" data-y="4000" data-reveal="c-modernization"></div>
+    <div id="democratization-reveal" class="step light-text" data-x="0" data-y="4000" data-reveal="c-democratization"></div>
+    <div id="automation-reveal" class="step light-text" data-x="0" data-y="4000" data-reveal="c-automation"></div>
+
+</div>
+
+<script src="js/particles.js"></script>
+<script src="js/impress.js"></script>
+<script src="js/impress-helpers.js"></script>
+<script src="js/hint.js"></script>
+<script src="js/floating-words.js"></script>
+<script>
+
+    // init particles.js
+    // particlesJS.load(@dom-id, @path-json, @callback (optional))
+    particlesJS.load('particles', 'js/particlesjs-config.json');
+
+    // init floating-words.js
+    // floatingWordsJS(@dom-id, @phrases)
+    const buzzwords = floatingWordsJS('buzzwords-canvas', [
+        'Machine Learning',
+        'Artificial Intelligence',
+        'Natural Language Processing',
+        'Graph',
+        'Computer Vision',
+        'Real Time',
+        'Geospatial',
+        'Decision Trees',
+        'Accessible BI',
+        'Augmented Analytics',
+        'Virtual Assistants',
+        'Pattern BI',
+        'Digital Twin',
+        'Informed Data Lake',
+        'Big Data',
+        'Data Science',
+        'Digital Citizens',
+        'Mobile Analytics',
+        'Deep Learning',
+        'GIS',
+        'Spatial Analytics',
+        'Humanized Data',
+        'Data Wrangling',
+        'Data Mining',
+        'Statistics',
+        'Modeling',
+        'Business Intelligence',
+        'Analysis',
+        'Decision Science',
+        'Cloud',
+        'Unstructured Data',
+        'Data Visualization',
+        'Spectral Methods',
+        'Clustering',
+        'Neural Network',
+        'IoT',
+        'Feature',
+        'Regression',
+        'Precision',
+        'Sample',
+        'Algorithm',
+        'Training Set',
+        'Classifier',
+        'Indicator',
+        'Noise'
+    ]);
+
+    // init impress.js
+	impress = impress();
+	impress.init();
+
+    const freezePhrases = [
+        'Machine Learning',
+        'Artificial Intelligence',
+        'Natural Language Processing',
+        'Graph',
+        'Computer Vision',
+        'Real Time',
+        'Geospatial',
+        'Decision Trees'
+    ];
+
+
+    /* center buzzwords */
+    let freezePhrasesInterval;
+    freezePhrasesAnimProps = {
+        fontSize: 36,
+        x: buzzwords.c.canvas.width / 2 - 186,
+        y: buzzwords.c.canvas.height / 2,
+        h: 82,
+        frames: 24,
+        cf: 1
+    };
+
+    // cf: current frame, b: begInnIng value, d: change In value, tf: total frames
+	function easeOutCubic(cf, b, c, tf) {
+		return c*((cf=cf/tf-1)*cf*cf + 1) + b;
+	}
+
+    function animation(phrases) {
+        const c = buzzwords.c;
+        for (var i = 0; i < phrases.length; i++) {
+            const fontChange = freezePhrasesAnimProps.fontSize - phrases[i].bProps.fontSize;
+            phrases[i].font = easeOutCubic(freezePhrasesAnimProps.cf, phrases[i].bProps.fontSize, fontChange, freezePhrasesAnimProps.frames) + 'px "Gotham Narrow", sans-serif';
+            c.font = phrases[i].font;
+            const xChange = freezePhrasesAnimProps.x - phrases[i].bProps.x;
+            phrases[i].x = easeOutCubic(freezePhrasesAnimProps.cf, phrases[i].bProps.x, xChange, freezePhrasesAnimProps.frames)
+            const targetY = freezePhrasesAnimProps.y - (freezePhrasesAnimProps.h * (phrases.length - 1) / 2) + (freezePhrasesAnimProps.h * i);
+            const yChange = targetY - phrases[i].bProps.y;
+            phrases[i].y = easeOutCubic(freezePhrasesAnimProps.cf, phrases[i].bProps.y, yChange, freezePhrasesAnimProps.frames)
+            c.fillText(phrases[i].text, phrases[i].x, phrases[i].y);
+            phrases[i].width = c.measureText(phrases[i].text).width;
+            c.stroke();
+        }
+        // move(phrases);
+    }
+
+    // function move(phrases) {
+    //     for (var i = 0; i < phrases.length; i++) {
+    //         if (phrases[i].animate) {
+    //             if (phrases[i].y < 0 && !end) {
+    //                 phrases[i].y = h + 100;
+    //                 phrases[i].x = Math.random()*w;
+    //                 phrases[i].font = Math.random() * (40 - 10) + 10 + 'px "Gotham Narrow", sans-serif';
+    //                 phrases[i].speed = Math.random() * (3) + 1;
+    //             } else {
+    //                 phrases[i].y -= phrases[i].speed;
+    //             }
+    //         }
+    //     }
+    // }
+
+    stepEntering('buzzwords', evt => {
+        const buzzwordsFreezeDomElem = document.getElementById('buzzwords-freeze');
+        buzzwordsFreezeDomElem.className = buzzwordsFreezeDomElem.className.replace(/\s*done\b/g, '');
+        const capabilitiesDomElem = document.getElementById('capabilities');
+        capabilitiesDomElem.className = capabilitiesDomElem.className.replace(/\s*reveal\b/g, '');
+        buzzwords.c.canvas.className = buzzwords.c.canvas.className.replace(/\s*hidden\b/g, '');
+        freezePhrasesAnimProps.cf = 1;
+        for (let i=0; i<buzzwords.phrases.length; i++) {
+            buzzwords.phrases[i].animate = true;
+        }
+        buzzwords.resume();
+    })
+
+    stepEntering('buzzwords-freeze', evt => {
+        const capabilitiesDomElem = document.getElementById('capabilities');
+        capabilitiesDomElem.className = capabilitiesDomElem.className.replace(/\s*reveal\b/g, '');
+        const stepElem = document.getElementById('buzzwords-freeze');
+        const frozenPhrases = [];
+        for (let i=0; i<buzzwords.phrases.length; i++) {
+            if (freezePhrases.indexOf(buzzwords.phrases[i].text) > -1) {
+                buzzwords.phrases[i].animate = false;
+                buzzwords.phrases[i].bProps = {
+                    x: buzzwords.phrases[i].x,
+                    y: buzzwords.phrases[i].y,
+                    fontSize: parseFloat(buzzwords.phrases[i].font)
+                };
+                frozenPhrases.push(buzzwords.phrases[i]);
+            } else {
+                let frames = 0;
+                let speedUpInterval = setInterval(() => {
+                    buzzwords.phrases[i].speed += 1;
+                    if (++frames === freezePhrasesAnimProps.frames) {
+                        clearInterval(speedUpInterval);
+                    }
+                }, 24);
+            }
+        }
+        buzzwords.end(() => {
+            freezePhrasesInterval = setInterval(() => {
+                const w = buzzwords.c.canvas.width;
+                const h = buzzwords.c.canvas.height;
+                buzzwords.c.clearRect(0, 0, w, h);
+                animation(frozenPhrases);
+                if (freezePhrasesAnimProps.cf++ >= freezePhrasesAnimProps.frames) {
+                    clearInterval(freezePhrasesInterval);
+                    stepElem.className = stepElem.className += ' done';
+                    buzzwords.c.canvas.className += ' hidden';
+                    for(let i=0; i<frozenPhrases.length; i++) {
+                        frozenPhrases[i].width = buzzwords.c.measureText(frozenPhrases[i].text).width;
+                    }
+                }
+            }, 24);
+        });
+    });
+
+    stepEntered('capabilities', evt => {
+        const buzzwordsListEl = document.querySelector('#buzzwords-freeze .buzzword-list');
+        console.log(buzzwordsListEl);
+        evt.target.className += evt.target.className + ' reveal';
+        const capabilitiesList = evt.target.querySelector('.capabilities-list');
+        capabilitiesList.style.marginLeft = buzzwordsListEl.offsetWidth * .66 + 73 + 'px';
+    });
+
+    document.addEventListener('impress:stepleave', event => {
+        const activeStep = document.querySelector('.step.active');
+        if (activeStep.dataset.reveal) {
+            const revealEl = document.getElementById(activeStep.dataset.reveal);
+            revealEl.className = revealEl.className + ' reveal';
+        }
+        if (activeStep.dataset.hide) {
+            const hideEl = document.getElementById(activeStep.dataset.hide);
+            hideEl.className = hideEl.className + ' hide';
+        } 
+    });
+	
+</script>
+
+</body>
+</html>

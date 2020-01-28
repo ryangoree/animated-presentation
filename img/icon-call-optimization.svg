@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Strategy</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M29.5 57A27.5 27.5 0 1 1 57 29.5m-27.5 16a16 16 0 1 1 16-16" fill="none"
+  stroke="#ffe468" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+  <circle data-name="layer2" cx="29.5" cy="29.5" r="4" fill="none"
+  stroke="#ffe468" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></circle>
+  <path data-name="layer1" fill="none" stroke="#ffe468" stroke-miterlimit="10"
+  stroke-width="2" d="M62 62L37.9 37.9m17.3 1.6l-17.3-1.6 1.4 17.4" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+</svg>

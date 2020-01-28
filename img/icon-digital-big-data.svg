@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Cellular Signal</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <circle data-name="layer2"
+  cx="32" cy="29.2" r="8" fill="none" stroke="#ffe468" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></circle>
+  <path data-name="layer2" fill="none" stroke="#ffe468" stroke-miterlimit="10"
+  stroke-width="2" d="M32 37.2v22" stroke-linejoin="round" stroke-linecap="round"></path>
+  <path data-name="layer1" d="M45.1 14.1a20 20 0 0 1 0 30.2m-26.2 0a20 20 0 0 1 0-30.2M52.2 7a30 30 0 0 1 0 44.4m-40.4 0a30 30 0 0 1 0-44.4"
+  fill="none" stroke="#ffe468" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+</svg>
