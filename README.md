@@ -4,6 +4,8 @@ This is a presentation I made to walk senior executives through some of the Mach
 
 I can't share the actual presentation, so words, colors, and logos have been changed to anonymize it.
 
+**[Preview](https://ryang26.github.io/animated-presentation/)**
+
 ## Credit
 
 - [impress.js](https://impress.js.org/)
